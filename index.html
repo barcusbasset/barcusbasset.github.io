@@ -4,43 +4,67 @@
 <head>
 
 <title>Anexmath Home</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&display=swap" rel="stylesheet"> 
 <style>
-    body {background-color: rgb(94, 89, 89);}
+
+    body {background-color: rgb(36, 34, 34);}
+
+    .logo {
+        font-family: 'Audiowide', cursive;
+        font-size: 400%;
+        color: #f2f2f2;
+        text-align: center;
+    }
+
+    .motto-block {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 200%;
+        text-align: center;
+        color: #f2f2f2;
+        position: relative;       
+    }
 
     /* Add a black background color to the top navigation */
     .topnav {
     background-color: rgb(66, 45, 45);
-    overflow: hidden;
+    border-radius: 10%;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    left: 25%;
+    right: 25%;
     }
 
     /* Style the links inside the navigation bar */
     .topnav a {
-    float: left;
+    float: center;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 150%;
     }
 
     /* Change the color of links on hover */
     .topnav a:hover {
     background-color: #ddd;
+    border-radius: 10%;
     color: black;
-    }
-
-    /* Add a color to the active/current link */
-    .topnav a.active {
-    background-color: #ec3508;
-    color: rgb(8, 7, 7);
+    height:1px;
     }
 
     .centerAE {
     display: block;
-    border-radius: 25px;
+    border-radius: 10%;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    margin-top: 4%;
     }
 
 
@@ -52,17 +76,20 @@
 <body>
 
 
+<div class="logo-block">
+    <h1 class="logo">ANEXMATH</h1>
+</div>
 
-<h1 class="logo">ANEXMATH</h1>
+<div class="motto-block">
+    <p>Knowledge is on the Web</p>
+</div>
 
 <div class="topnav">
-    <a class="active" href="index.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="#Modules">Modules</a>
     <a href="#Contact">Contact</a>
     <a href="#About">About</a>
 </div>
-
-<p>Knowledge is on the Web <br> together we can find it</p>
 
 <!--
 <input type="image" src="assets/international-space-station-988_1280.jpg"

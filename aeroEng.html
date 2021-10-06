@@ -4,41 +4,68 @@
 <head>
 
 <title>AeroEng Course</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&display=swap" rel="stylesheet"> 
 <style>
-    body {background-color: rgb(94, 89, 89);}
+
+    body {background-color: rgb(36, 34, 34);}
+
+    .logo {
+        font-family: 'Audiowide', cursive;
+        font-size: 400%;
+        color: #f2f2f2;
+        text-align: center;
+    }
+
+    .motto-block {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 200%;
+        text-align: center;
+        color: #f2f2f2;
+        position: relative;       
+    }
 
     /* Add a black background color to the top navigation */
     .topnav {
     background-color: rgb(66, 45, 45);
-    overflow: hidden;
+    border-radius: 10%;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    left: 25%;
+    right: 25%;
     }
 
     /* Style the links inside the navigation bar */
     .topnav a {
-    float: left;
+    float: center;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 150%;
     }
 
     /* Change the color of links on hover */
     .topnav a:hover {
     background-color: #ddd;
+    border-radius: 10%;
     color: black;
-    }
-
-    /* Add a color to the active/current link */
-    .topnav a.active {
-    background-color: #ec3508;
-    color: rgb(8, 7, 7);
+    height:1px;
     }
 
     .h1prereq {
-      background-color: rgb(192, 81, 17);
+      position:relative;
       text-align: center;
-      font-size: 24px;
+      font-size: 150%;
+      margin-top: 4%;
+      width: 50%;
+      left: 25%;
+      color: #f2f2f2;
     }
 
 </style>
@@ -47,16 +74,30 @@
 
 <body>
 
-<h1 class="logo">INFINEON</h1>
+<div class="logo-block">
+    <h1 class="logo">ANEXMATH</h1>
+</div>
+
+<div class="motto-block">
+    <p>Knowledge is on the Web</p>
+</div>
 
 <div class="topnav">
-    <a class="active" href="index.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="#Modules">Modules</a>
     <a href="#Contact">Contact</a>
     <a href="#About">About</a>
 </div>
 
-<h1 class="h1prereq">Required Prior Knowledge</h1>
+<h2 class="h1prereq">Required Prior Knowledge<br>-----------------------------------</h1>
+<ul class='prereq-list-AE'>
+    <li>Calculus</li>
+    <li>Differential Equations</li>
+    <li>Physics I, II, and III</li>
+</ul>
+<div class='khan-academy-link'>
+
+</div>
 
 </body>
 
