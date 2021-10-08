@@ -7,7 +7,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&display=swap" rel="stylesheet">
 <style>
 
     body {background-color: rgb(36, 34, 34);}
@@ -24,7 +24,7 @@
         font-size: 200%;
         text-align: center;
         color: #f2f2f2;
-        position: relative;       
+        position: relative;
     }
 
     /* Add a black background color to the top navigation */
@@ -58,10 +58,10 @@
     height:1px;
     }
 
-    .h1prereq {
+    .moduleHeads {
       position:relative;
       text-align: center;
-      font-size: 125%;
+      font-size: 150%;
       margin-top: 4%;
       width: 50%;
       left: 25%;
@@ -75,25 +75,32 @@
     }
 
     .prereq-list-AE {
-      color: #f2f2f2;         
+      color: #f2f2f2;
     }
 
+
     .prereq-container {
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 2% 4%; 
-        text-align: center;
-        width: 50%;
-        height: 50%;
-        margin-left: 25%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 2%;
+      width: 50%;
+      margin-left: 25%;
+      grid-template-areas:
+        "a1 a2 a3 a4";
     }
-    .a1 { grid-area: 1 / 1 / 2 / 2;color: white; background-color: rgb(172, 161, 70); 
-        border-radius: 10%;text-align: center;}
-    .a2 { grid-area: 1 / 2 / 2 / 3;color: white; background-color: rgb(172, 161, 70); 
-        border-radius: 10%;text-align: center;}
-    .a3 { grid-area: 1 / 3 / 2 / 4;color: white; background-color: rgb(172, 161, 70); 
-        border-radius: 10%;text-align: center;}
+    .a1 { grid-area: a1;color: white; background-color: rgb(172, 161, 70);
+        border-radius: 10%;text-align: center; }
+    .a2 { grid-area: a2;color: white; background-color: rgb(172, 161, 70);
+        border-radius: 10%;text-align: center; }
+    .a3 { grid-area: a3;color: white; background-color: rgb(172, 161, 70);
+        border-radius: 10%;text-align: center; }
+    .a4 { grid-area: a4;color: white; background-color: rgb(172, 161, 70);
+        border-radius: 10%;text-align: center; }
+
+    .YTvids {
+      text-align: center;
+    }
 
 </style>
 
@@ -101,41 +108,71 @@
 
 <body>
 
-<div class="logo-block">
-    <h1 class="logo">ANEXMATH</h1>
-</div>
+  <div class="logo-block">
+      <h1 class="logo">ANEXMATH</h1>
+  </div>
 
-<div class="motto-block">
-    <p>Knowledge is on the Web</p>
-</div>
+  <div class="motto-block">
+  <p>Knowledge is on the Web</p>
+  </div>
 
-<div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="#Modules">Modules</a>
-    <a href="#Contact">Contact</a>
-    <a href="#About">About</a>
-</div>
+  <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="#Modules">Modules</a>
+      <a href="#Contact">Contact</a>
+      <a href="#About">About</a>
+  </div>
 
-<h1 class='courseTitle'>AEROSPACE ENGINEERING</h1>
-<h2 class="h1prereq">Required Prior Knowledge<br>-----------------------------------</h1>
+  <h1 class='courseTitle'>AEROSPACE ENGINEERING</h1>
+  <h2 class="moduleHeads">Fundamentals<br>-----------------------------------</h2>
 
-<!--
-<div class="prereq-container">
-    <div class="a1"><h3>Calculus</h3></div>
-    <div class="a2"><h3>Differential Equations</h3></div>
-    <div class="a3"><h3>Physics</h3></div>
-</div>
--->
+  <!--
+  <div class="prereq-container">
+      <div class="a1"><h3>Calculus</h3></div>
+      <div class="a2"><h3>Differential Equations</h3></div>
+      <div class="a3"><h3>Physics</h3></div>
+  </div>
+  -->
 
-<div class="prereq-container">
-    <a href="https://www.khanacademy.org/math/ap-calculus-ab" target="_blank" class="a1"><h3>Calculus</h3></a>
-    <a href="https://www.khanacademy.org/math/differential-equations" target="_blank" class="a2"><h3>Diff Eqs</h3></a>
-    <a href="https://www.khanacademy.org/science/ap-college-physics-1" target="_blank" class="a3"><h3>Physics</h3></a>
-</div>
+  <div class="prereq-container">
+      <a href="https://www.khanacademy.org/math/ap-calculus-ab" target="_blank" class="a1"><h3>Calculus</h3></a>
+      <a href="https://www.khanacademy.org/math/differential-equations" target="_blank" class="a2"><h3>Diff Eqs</h3></a>
+      <a href="https://www.khanacademy.org/science/physics" target="_blank" class="a3"><h3>Physics</h3></a>
+      <a href="https://www.khanacademy.org/science/chemistry" target="_blank" class="a4"><h3>Chemistry</h3></a>
+  </div>
 
+  <h2 class="moduleHeads">Statics<br>-----------------------------------</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLRqDfxcafc23LXGoItpkYMKtUdHaQwSDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+  <h2 class="moduleHeads">Dynamics<br>-----------------------------------</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLRqDfxcafc206fNQPkcBUFEMYje-UjtqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+  <h2 class="moduleHeads">Solids<br>-----------------------------------</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLRqDfxcafc21wlI3E56IkDmRJ-33apMjv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+  <h2 class="moduleHeads">Materials<br>-----------------------------------</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLL0SWcFqypCm4xCn64xO7RS62PPzy-oP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+  <h2 class="moduleHeads">Solid Mechanics<br>-----------------------------------</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOAuB8dR35oft2ZLc1sHseypNMAiG_TeJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>  <h2 class="moduleHeads">Aerospace Structures<br>-----------------------------------</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLv4AhJns8bvCP7FGrBsNtE-YDYlD1koUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+  <h2 class="moduleHeads">Orbital Mechanics<br>-----------------------------------</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL5ebyVGQORm6IUCJIuXGYj21o91Uyrwc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+  <h2 class="moduleHeads">Aerodynamics<br>-----------------------------------</h2>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLe2kb8k5FJpgLfhf18VphADpX9qvaby6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
 
-
-</div>
 
 </body>
 
